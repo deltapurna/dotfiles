@@ -1,0 +1,27 @@
+# ~/.tmuxinator/halalonclick.yml
+
+name: halalonclick
+root: ~/code/dev/web/halalonclick.com/wp-content/plugins/tonjoo-lotus-bootstraper
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+pre: sudo systemctl start httpd && sudo systemctl start mysqld
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim .
+        - # just normal shell
+  - logs: tail -f /var/log/httpd/error_log

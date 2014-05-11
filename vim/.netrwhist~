@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/delta/code/learn/web/try_rails_api'
+let g:netrw_dirhist_2='/home/delta/code/learn/web/try_rails_api/config'
+let g:netrw_dirhist_3='/home/delta/code/learn/web/try_rails_api'
+let g:netrw_dirhist_4='/home/delta/code/learn/web/try_rails_api/config'
