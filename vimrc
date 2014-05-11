@@ -14,6 +14,7 @@ Plugin 'kien/ctrlp.vim' " Fuzzy file finder
 Plugin 'tpope/vim-surround' " surround everything
 Plugin 'tComment' " comments
 Plugin 'benmills/vimux' " tmux integration
+Plugin 'tpope/vim-fugitive' " a Git wrapper
 
 " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
