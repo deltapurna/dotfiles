@@ -17,7 +17,6 @@ Plugin 'benmills/vimux' " tmux integration
 Plugin 'bling/vim-airline' " for statusline
 Plugin 'tpope/vim-fugitive' " for git status
 Plugin 'altercation/vim-colors-solarized' " for solarized theme
-Plugin 'Bogdanp/github.vim' " for github theme
 Plugin 'summerfruit256.vim' " for light theme
 
 " Language Specifics
