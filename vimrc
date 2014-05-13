@@ -16,6 +16,9 @@ Plugin 'tComment' " comments
 Plugin 'benmills/vimux' " tmux integration
 Plugin 'bling/vim-airline' " for statusline
 Plugin 'tpope/vim-fugitive' " for git status
+Plugin 'altercation/vim-colors-solarized' " for solarized theme
+Plugin 'Bogdanp/github.vim' " for github theme
+Plugin 'summerfruit256.vim' " for light theme
 
 " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
@@ -43,11 +46,21 @@ set ignorecase			" searches are case sensitive...
 set smartcase			" ...unless they contain at least one capital letter
 
 " Appearance
-colorscheme torte
+set t_Co=256 " force vim to use 256 color
+let g:solarized_termcolors=256      " use solarized 256 fallback
+set background=dark " use dark as default
+colorscheme solarized
 set laststatus=2
 set noshowmode
-set t_Co=256
 let g:airline_powerline_fonts = 1
+
+" gvim setup
+if has('gui_running')
+  set guifont=Inconsolata\ Medium\ 12
+  set guioptions-=T  " remove toolbar
+  set guioptions-=r  " remove right-hand scroll bar
+  set guioptions-=L  " remove right-hand scroll bar
+endif
 
 " change the mapleader from \ to ,
 let mapleader=","

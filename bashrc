@@ -26,6 +26,7 @@ PS1='[\u@\h \W]\$ '
 
 # for tmux: export 256color
 [ -n "$TMUX" ] && export TERM=screen-256color
+alias tmux='tmux -2'
 
 source /usr/share/git/completion/git-prompt.sh
 source /usr/share/tmuxinator/completion/tmuxinator.bash

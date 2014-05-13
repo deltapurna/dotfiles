@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/delta/code/dev/web/adhocspace.com/file/pdf'
-let g:netrw_dirhist_2='/home/delta/code/dev/web/adhocspace.com'
-let g:netrw_dirhist_3='/home/delta'
-let g:netrw_dirhist_4='/home/delta/code/dev/web/adhocspace.com'
-let g:netrw_dirhist_5='/home/delta/code/dev/web/adhocspace.com/themes'
-let g:netrw_dirhist_6='/home/delta/code/dev/web/adhocspace.com/themes/qiscus'
-let g:netrw_dirhist_7='/home/delta/code/dev/web/adhocspace.com/themes/qiscus/views'
-let g:netrw_dirhist_8='/home/delta/code/dev/web/adhocspace.com/themes/qiscus/views/front_end'
-let g:netrw_dirhist_9='/home/delta/code/dev/web/adhocspace.com'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/delta/code/dev/web/adhocspace.com'
