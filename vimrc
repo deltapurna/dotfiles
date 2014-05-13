@@ -14,6 +14,8 @@ Plugin 'kien/ctrlp.vim' " Fuzzy file finder
 Plugin 'tpope/vim-surround' " surround everything
 Plugin 'tComment' " comments
 Plugin 'benmills/vimux' " tmux integration
+Plugin 'bling/vim-airline' " for statusline
+Plugin 'tpope/vim-fugitive' " for git status
 
 " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
@@ -42,6 +44,10 @@ set smartcase			" ...unless they contain at least one capital letter
 
 " Appearance
 colorscheme torte
+set laststatus=2
+set noshowmode
+set t_Co=256
+let g:airline_powerline_fonts = 1
 
 " change the mapleader from \ to ,
 let mapleader=","

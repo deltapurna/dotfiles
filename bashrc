@@ -24,6 +24,9 @@ alias gluxby='cd /home/delta/code/dev/web/luxby.co/wp-content/plugins/tonjoo-lot
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+# for tmux: export 256color
+[ -n "$TMUX" ] && export TERM=screen-256color
+
 source /usr/share/git/completion/git-prompt.sh
 source /usr/share/tmuxinator/completion/tmuxinator.bash
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
