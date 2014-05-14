@@ -8,8 +8,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
-" Utilities
+"
+" " Utilities
 Plugin 'kien/ctrlp.vim' " Fuzzy file finder
 Plugin 'tpope/vim-surround' " surround everything
 Plugin 'tComment' " comments
@@ -18,11 +18,10 @@ Plugin 'bling/vim-airline' " for statusline
 Plugin 'tpope/vim-fugitive' " for git status
 Plugin 'altercation/vim-colors-solarized' " for solarized theme
 Plugin 'summerfruit256.vim' " for light theme
-
-" Language Specifics
+"
+" " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
 Plugin 'derekwyatt/vim-scala' " Scala
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -32,9 +31,9 @@ syntax enable
 set encoding=utf-8
 set showcmd			" display incomplete commands
 
-" Whitespace
+" Whitespaces
 set nowrap 			" don't wrap lines
-set tabstop=2 shiftwidth=2	" a tab is two spaces
+set tabstop=2 softtabstop=2 shiftwidth=2	" a tab is two spaces
 set expandtab			" use spaces, not tabs (optional)
 set backspace=indent,eol,start	" backspace through everything in insert mode
 
@@ -44,7 +43,7 @@ set incsearch			" incremental searching
 set ignorecase			" searches are case sensitive...
 set smartcase			" ...unless they contain at least one capital letter
 
-" Appearance
+" Appearances
 set t_Co=256 " force vim to use 256 color
 let g:solarized_termcolors=256      " use solarized 256 fallback
 set background=dark " use dark as default
@@ -53,9 +52,14 @@ set laststatus=2
 set noshowmode
 let g:airline_powerline_fonts = 1
 
+" Autocommands
+if has('autocmd')
+  autocmd bufwritepost .vimrc source $MYVIMRC " source .vimrc file after saving it
+endif
+
 " gvim setup
 if has('gui_running')
-  set guifont=Inconsolata\ Medium\ 12
+  set guifont=Inconsolata\ Medium\ 12 " set default font to Inconsolate 12
   set guioptions-=T  " remove toolbar
   set guioptions-=r  " remove right-hand scroll bar
   set guioptions-=L  " remove right-hand scroll bar
