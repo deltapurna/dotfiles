@@ -13,11 +13,14 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim' " Fuzzy file finder
 Plugin 'tpope/vim-surround' " surround everything
 Plugin 'tComment' " comments
-Plugin 'bling/vim-airline' " for statusline
 Plugin 'tpope/vim-fugitive' " for git status
+Plugin 'matchit.zip', {'name': 'matchit'} " go to closing brackets
+Plugin 'mileszs/ack.vim' " ack for search
+
+" Appearances
+Plugin 'bling/vim-airline' " for statusline
 Plugin 'altercation/vim-colors-solarized' " for solarized theme
 Plugin 'summerfruit256.vim' " for light theme
-Plugin 'matchit.zip', {'name': 'matchit'}
 
 " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
