@@ -16,6 +16,7 @@ Plugin 'tComment' " comments
 Plugin 'tpope/vim-fugitive' " for git status
 Plugin 'matchit.zip', {'name': 'matchit'} " go to closing brackets
 Plugin 'mileszs/ack.vim' " ack for search
+Plugin 'rking/ag.vim' " ag for faster search
 
 " Appearances
 Plugin 'bling/vim-airline' " for statusline
@@ -25,6 +26,7 @@ Plugin 'summerfruit256.vim' " for light theme
 " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
 Plugin 'derekwyatt/vim-scala' " Scala
+Plugin 'vim-ruby/vim-ruby' " Scala
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -46,9 +48,15 @@ set incsearch			" incremental searching
 set ignorecase			" searches are case sensitive...
 set smartcase			" ...unless they contain at least one capital letter
 
-" Tags
+" Tags & Navigations
 set tags=./tags,./gems.tags;
 let g:ctrlp_extensions = ['tag']
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 
 " Appearances
 set t_Co=256 " force vim to use 256 color
@@ -74,5 +82,10 @@ if has('gui_running')
   set guioptions-=m  " remove menu
 endif
 
+" Mapping
+
 " change the mapleader from \ to ,
 let mapleader=","
+
+" bind K to grep word under cursor
+nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
