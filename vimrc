@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim' " Fuzzy file finder
 Plugin 'tpope/vim-surround' " surround everything
 Plugin 'tComment' " comments
+Plugin 'taglist.vim' " list tags
 Plugin 'tpope/vim-fugitive' " for git status
 Plugin 'matchit.zip', {'name': 'matchit'} " go to closing brackets
 Plugin 'mileszs/ack.vim' " ack for search
@@ -22,6 +23,7 @@ Plugin 'rking/ag.vim' " ag for faster search
 Plugin 'bling/vim-airline' " for statusline
 Plugin 'altercation/vim-colors-solarized' " for solarized theme
 Plugin 'summerfruit256.vim' " for light theme
+Plugin 'drmikehenry/vim-fontsize' " for fontsize in gvim
 
 " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
@@ -51,6 +53,8 @@ set smartcase			" ...unless they contain at least one capital letter
 " Tags & Navigations
 set tags=./tags,./gems.tags;
 let g:ctrlp_extensions = ['tag']
+let Tlist_Show_One_File = 1 " Taglist to show only 1 file tags
+let Tlist_Use_Right_Window = 1 " Taglist to show on the right sidebar
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
@@ -75,7 +79,7 @@ endif
 
 " gvim setup
 if has('gui_running')
-  set guifont=Inconsolata\ Medium\ 12 " set default font to Inconsolate 12
+  set guifont=Inconsolata\ for\ Powerline\ Medium\ 12 " set default font to Inconsolate 12
   set guioptions-=T  " remove toolbar
   set guioptions-=r  " remove right-hand scroll bar
   set guioptions-=L  " remove right-hand scroll bar
@@ -87,5 +91,5 @@ endif
 " change the mapleader from \ to ,
 let mapleader=","
 
-" bind K to grep word under cursor
-nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
+" toggle taglist
+nnoremap <leader> l :TlistToggle<CR>

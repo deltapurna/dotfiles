@@ -8,6 +8,7 @@
 # navigation
 alias gdw='cd /home/delta/code/dev/web'
 alias gda='cd /home/delta/code/dev/android'
+alias gl='cd /home/delta/Dropbox/learn'
 alias glw='cd /home/delta/code/learn/web'
 alias gla='cd /home/delta/code/learn/android'
 alias gls='cd /home/delta/code/learn/scala'
