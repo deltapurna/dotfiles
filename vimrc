@@ -16,14 +16,13 @@ Plugin 'tComment' " comments
 Plugin 'taglist.vim' " list tags
 Plugin 'tpope/vim-fugitive' " for git status
 Plugin 'matchit.zip', {'name': 'matchit'} " go to closing brackets
-Plugin 'mileszs/ack.vim' " ack for search
 Plugin 'rking/ag.vim' " ag for faster search
 
 " Appearances
 Plugin 'bling/vim-airline' " for statusline
 Plugin 'altercation/vim-colors-solarized' " for solarized theme
-Plugin 'summerfruit256.vim' " for light theme
 Plugin 'drmikehenry/vim-fontsize' " for fontsize in gvim
+Plugin 'Wombat' " Wombat theme
 
 " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
@@ -65,12 +64,13 @@ endif
 " Appearances
 set t_Co=256 " force vim to use 256 color
 let g:solarized_termcolors=256      " use solarized 256 fallback
-set background=dark " use dark as default
-colorscheme solarized
+" set background=dark " use dark as default
+colorscheme wombat
 set laststatus=2
 set noshowmode
 set number
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Autocommands
 if has('autocmd')

@@ -1,36 +1,37 @@
 ! terminal colors ------------------------------------------------------------
 !
-! ! tangoesque scheme
+! tangoesque scheme
 *background: #111111
 *foreground: #babdb6
-! ! Black (not tango) + DarkGrey
+! Black (not tango) + DarkGrey
 *color0:  #000000
 *color8:  #555753
-! ! DarkRed + Red
+! DarkRed + Red
 *color1:  #ff6565
 *color9:  #ff8d8d
-! ! DarkGreen + Green
+! DarkGreen + Green
 *color2:  #93d44f
 *color10: #c8e7a8
-! ! DarkYellow + Yellow
+! DarkYellow + Yellow
 *color3:  #eab93d
 *color11: #ffc123
-! ! DarkBlue + Blue
+! DarkBlue + Blue
 *color4:  #204a87
 *color12: #3465a4
-! ! DarkMagenta + Magenta
+! DarkMagenta + Magenta
 *color5:  #ce5c00
 *color13: #f57900
-! !DarkCyan + Cyan (both not tango)
+!DarkCyan + Cyan (both not tango)
 *color6:  #89b6e2
 *color14: #46a4ff
-! ! LightGrey + White
+! LightGrey + White
 *color7:  #cccccc
 *color15: #ffffff
 !
 ! URxvt config -------------------------------------------------------------
 !
 URxvt*font: xft:Inconsolata:size=12
+! URxvt*font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso8859-1
 URxvt*letterSpace: -1
 URxvt*scrollBar: false
 URxvt.perl-ext-common: default,tabbedex,font-size,clipboard
@@ -46,5 +47,11 @@ URXvt.tabbed.reopen-on-close: yes
 URxvt.keysym.Control-t: perl:tabbedex:new_tab
 URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
 ! fontsize config -------------------------------------------------------------
-URxvt.keysym.C-Up:     perl:font-size:increase
-URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-plus:     perl:font-size:increase
+URxvt.keysym.C-minus:   perl:font-size:decrease
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
