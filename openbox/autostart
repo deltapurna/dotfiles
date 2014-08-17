@@ -1,0 +1,11 @@
+##Compositor
+compton -CGb &
+
+##Background
+(sleep 1s && nitrogen --restore) &
+
+##tint2 panel
+(sleep 1s && tint2) &
+
+##Sound Icon
+(sleep 1s && volumeicon) &
