@@ -271,11 +271,26 @@
         <command>gvim</command>
       </action>
     </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>thunar ~/Dropbox/learn</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <command>thunar ~/Dropbox/1.618\ Pte\ Ltd/Projects</command>
+      </action>
+    </keybind>
+    <keybind key="W-f">
+      <action name="Execute">
+        <command>libreoffice ~/Dropbox/1.618\ Jogja/Indonesia\ Finance/Transaction\ History.xls</command>
+      </action>
+    </keybind>
     <keybind key="C-W-Up">
       <action name="ToggleMaximizeFull"/>
     </keybind>
     <keybind key="C-W-Down">
-      <action name="Shade"/>
+      <action name="Iconify"/>
     </keybind>
     <keybind key="W-r">
       <action name="Reconfigure"/>

@@ -1,6 +1,9 @@
 ##Compositor
 compton -CGb &
 
+##File Manager daemon
+# (sleep 1s && thunar --daemon) &
+
 ##Background
 (sleep 1s && nitrogen --restore) &
 
@@ -9,3 +12,6 @@ compton -CGb &
 
 ##Sound Icon
 (sleep 1s && volumeicon) &
+
+##Conky
+(sleep 3s && conky) &

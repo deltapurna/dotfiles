@@ -75,6 +75,8 @@ let g:airline#extensions#tabline#enabled = 1
 " Autocommands
 if has('autocmd')
   autocmd bufwritepost .vimrc source $MYVIMRC " source .vimrc file after saving it
+  " Open markdown files with Chrome.
+  autocmd BufEnter *.md exe 'nnoremap <leader>p :!chromium %:p<CR>'
 endif
 
 " gvim setup
@@ -92,4 +94,4 @@ endif
 let mapleader=","
 
 " toggle taglist
-nnoremap <leader> l :TlistToggle<CR>
+nnoremap <leader>l :TlistToggle<CR>
