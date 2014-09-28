@@ -30,7 +30,7 @@ PS1='[\u@\h \W]\$ '
 alias tmux='tmux -2'
 
 source /usr/share/git/completion/git-prompt.sh
-source /usr/share/tmuxinator/completion/tmuxinator.bash
+# source /usr/share/tmuxinator/completion/tmuxinator.bash
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 # Set VIM as default $EDITOR
@@ -42,6 +42,15 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Set rbenv path
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Set npm path
+NPM_PACKAGES="${HOME}/.npm-packages"
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+PATH="$NPM_PACKAGES/bin:$PATH"
+# Unset manpath so we can inherit from /etc/manpath via the `manpath`
+# command
+unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
+MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 #  Customize BASH PS1 prompt to show current GIT repository and branch.
 #  by Mike Stewart - http://MediaDoneRight.com
