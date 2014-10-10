@@ -6,21 +6,21 @@
 [[ $- != *i* ]] && return
 
 # navigation
+# development
 alias gdw='cd /home/delta/code/dev/web'
 alias gda='cd /home/delta/code/dev/android'
+
+#learning
 alias gl='cd /home/delta/Dropbox/learn'
 alias glw='cd /home/delta/code/learn/web'
 alias gla='cd /home/delta/code/learn/android'
 alias gls='cd /home/delta/code/learn/scala'
 alias glr='cd /home/delta/code/learn/ruby'
-alias gbase='cd /home/delta/code/base'
-alias gliba='cd /home/delta/code/lib/android'
-alias glibwp='cd /home/delta/code/lib/wp'
-alias gdot='cd /home/delta/dotfiles'
+alias glj='cd /home/delta/code/learn/js'
+alias glib='cd /home/delta/code/lib'
 
-# projects
-alias ghalal='cd /home/delta/code/dev/web/halalonclick.com/wp-content/plugins/tonjoo-lotus-bootstraper'
-alias gluxby='cd /home/delta/code/dev/web/luxby.co/wp-content/plugins/tonjoo-lotus-bootstraper'
+#dotfiles
+alias gdot='cd /home/delta/dotfiles'
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
@@ -51,6 +51,9 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 # command
 unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+# Set SML path
+export PATH="$PATH:/usr/lib/smlnj/bin"
 
 #  Customize BASH PS1 prompt to show current GIT repository and branch.
 #  by Mike Stewart - http://MediaDoneRight.com
