@@ -7,21 +7,21 @@
 
 # navigation
 # development
-alias gdw='cd /home/delta/code/dev/web'
-alias gda='cd /home/delta/code/dev/android'
+alias gdw='cd ~/code/dev/web'
+alias gda='cd ~/code/dev/android'
 
 #learning
-alias gl='cd /home/delta/Dropbox/learn'
-alias glw='cd /home/delta/code/learn/web'
-alias gla='cd /home/delta/code/learn/android'
-alias gls='cd /home/delta/code/learn/scala'
-alias glm='cd /home/delta/code/learn/ml'
-alias glr='cd /home/delta/code/learn/ruby'
-alias glj='cd /home/delta/code/learn/js'
-alias glib='cd /home/delta/code/lib'
+alias gl='cd ~/Dropbox/learn'
+alias glw='cd ~/code/learn/web'
+alias gla='cd ~/code/learn/android'
+alias gls='cd ~/code/learn/scala'
+alias glm='cd ~/code/learn/ml'
+alias glr='cd ~/code/learn/ruby'
+alias glj='cd ~/code/learn/js'
+alias glib='cd ~/code/lib'
 
 #dotfiles
-alias gdot='cd /home/delta/dotfiles'
+alias gdot='cd ~/dotfiles'
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
@@ -31,7 +31,7 @@ PS1='[\u@\h \W]\$ '
 alias tmux='tmux -2'
 
 source /usr/share/git/completion/git-prompt.sh
-# source /usr/share/tmuxinator/completion/tmuxinator.bash
+source ~/.bin/tmuxinator.bash
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 # Set VIM as default $EDITOR
