@@ -56,6 +56,12 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 # Set SML path
 export PATH="$PATH:/usr/lib/smlnj/bin"
 
+# function for ssh
+function ssh-init {
+  eval $(ssh-agent)
+  ssh-add $1
+}
+
 #  Customize BASH PS1 prompt to show current GIT repository and branch.
 #  by Mike Stewart - http://MediaDoneRight.com
 
