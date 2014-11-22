@@ -27,7 +27,10 @@ Plugin 'Wombat' " Wombat theme
 " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
 Plugin 'derekwyatt/vim-scala' " Scala
-Plugin 'vim-ruby/vim-ruby' " Scala
+Plugin 'vim-ruby/vim-ruby' " Ruby
+Plugin 'kchmck/vim-coffee-script' " CoffeeScript
+Plugin 'tpope/vim-haml' " Haml
+Plugin 'evanmiller/nginx-vim-syntax' " Nginx
 
 " All of your Plugins must be added before the following line
 call vundle#end()

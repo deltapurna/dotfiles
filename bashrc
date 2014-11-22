@@ -10,7 +10,10 @@
 alias gdw='cd ~/code/dev/web'
 alias gda='cd ~/code/dev/android'
 
-#learning
+# VMs
+alias gvm='cd ~/VMs'
+
+# learning
 alias gl='cd ~/Dropbox/learn'
 alias glw='cd ~/code/learn/web'
 alias gla='cd ~/code/learn/android'
@@ -20,8 +23,11 @@ alias glr='cd ~/code/learn/ruby'
 alias glj='cd ~/code/learn/js'
 alias glib='cd ~/code/lib'
 
-#dotfiles
+# dotfiles
 alias gdot='cd ~/dotfiles'
+
+# docs
+alias gdocs='cd ~/Docs'
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
