@@ -19,14 +19,10 @@ tmux_options: -2
 # tmux_command: byobu
 
 windows:
-  - editor:
-      layout: main-horizontal
-      panes:
-        - vim
-        - #this is for shell
+  - shell: #this is for shell
   - server:
       layout: even-vertical
       panes:
         - bundle exec rails s
         - bundle exec rails c
-  - logs: tail -f log/development.log
+  - worker: bundle exec rake jobs:work

@@ -31,6 +31,7 @@ Plugin 'vim-ruby/vim-ruby' " Ruby
 Plugin 'kchmck/vim-coffee-script' " CoffeeScript
 Plugin 'tpope/vim-haml' " Haml
 Plugin 'evanmiller/nginx-vim-syntax' " Nginx
+Plugin 'briancollins/vim-jst' " for ejs
 
 " All of your Plugins must be added before the following line
 call vundle#end()
