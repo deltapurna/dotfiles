@@ -1,6 +1,6 @@
 # ~/.tmuxinator/musecrowdv2.yml
 
-name: musecrowdv2
+name: musecrowd
 root: ~/code/dev/web/musecrowd.com
 
 # Optional tmux socket

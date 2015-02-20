@@ -21,6 +21,7 @@ alias gls='cd ~/code/learn/scala'
 alias glm='cd ~/code/learn/ml'
 alias glr='cd ~/code/learn/ruby'
 alias glj='cd ~/code/learn/js'
+alias glc='cd ~/code/learn/c'
 alias glib='cd ~/code/lib'
 
 # dotfiles

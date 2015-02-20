@@ -19,9 +19,15 @@ pre_window: rbenv shell 2.1.5
 # tmux_command: byobu
 
 windows:
-  - guard:
+  - backend:
+      layout: main-horizontal
+      panes:
+        - # shell
+        - bundle exec rails s
+        - bundle exec guard
+        - bundle exec rails c
+  - frontend:
       layout: even-horizontal
       panes:
-        - bundle exec guard
-        - # shell
-  - console: bundle exec rails c
+        - cd ../bprebs-web && gulp
+        - cd ../bprebs-web
