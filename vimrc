@@ -17,12 +17,15 @@ Plugin 'taglist.vim' " list tags
 Plugin 'tpope/vim-fugitive' " for git status
 Plugin 'matchit.zip', {'name': 'matchit'} " go to closing brackets
 Plugin 'rking/ag.vim' " ag for faster search
+Plugin 'KabbAmine/zeavim.vim' " integrate with zeal
+Plugin 'wakatime/vim-wakatime' " integrate with wakatime
 
 " Appearances
 Plugin 'bling/vim-airline' " for statusline
-Plugin 'altercation/vim-colors-solarized' " for solarized theme
 Plugin 'drmikehenry/vim-fontsize' " for fontsize in gvim
-Plugin 'Wombat' " Wombat theme
+Plugin 'chriskempson/base16-vim' " base16 theme
+Plugin 'junegunn/goyo.vim' " Distraction free
+Plugin 'junegunn/limelight.vim' " To accompany goyo
 
 " Language Specifics
 Plugin 'tpope/vim-rails' " Rails
@@ -32,6 +35,7 @@ Plugin 'kchmck/vim-coffee-script' " CoffeeScript
 Plugin 'tpope/vim-haml' " Haml
 Plugin 'evanmiller/nginx-vim-syntax' " Nginx
 Plugin 'briancollins/vim-jst' " for ejs
+Plugin 'mxw/vim-jsx' " for jsx (react)
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -68,13 +72,16 @@ endif
 " Appearances
 set t_Co=256 " force vim to use 256 color
 let g:solarized_termcolors=256      " use solarized 256 fallback
-" set background=dark " use dark as default
-colorscheme wombat
+set background=dark " use dark as default
+colorscheme  torte
 set laststatus=2
 set noshowmode
 set number
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+" Use limelight when trigger Goyo
+autocmd User GoyoEnter Limelight
+autocmd User GoyoLeave Limelight!
 
 " Autocommands
 if has('autocmd')
@@ -85,10 +92,11 @@ endif
 
 " gvim setup
 if has('gui_running')
-  set guifont=Inconsolata\ for\ Powerline\ Medium\ 12 " set default font to Inconsolate 12
+  colorscheme  base16-eighties
+  set guifont=Source\ Code\ Pro\ 11 " set default font to Source Code Pro 11
   set guioptions-=T  " remove toolbar
   set guioptions-=r  " remove right-hand scroll bar
-  set guioptions-=L  " remove right-hand scroll bar
+  set guioptions-=L  " remove left-hand scroll bar
   set guioptions-=m  " remove menu
 endif
 

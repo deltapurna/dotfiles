@@ -70,6 +70,7 @@ ${color grey}File systems:
 ${color grey}Networking:
 ${color grey}Wi-Fi: Up:$color ${upspeed wlp7s0} ${color grey} - Down:$color ${downspeed wlp7s0}
 ${color grey}PPP  : Up:$color ${upspeed ppp0} ${color grey}   - Down:$color ${downspeed ppp0}
+${color grey}LAN  : Up:$color ${upspeed enp0s29u1u2} ${color grey}   - Down:$color ${downspeed enp0s29u1u2}
 $hr
 ${color grey}Name              PID   CPU%   MEM%
 ${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
