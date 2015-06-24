@@ -72,6 +72,12 @@ function ssh-init {
   ssh-add $1
 }
 
+# function for usb_modeswitch
+function set-huawei {
+  usb_modeswitch -v 0x12d1 -p 0x1446 -V 0x12d1 -P 0x1436 -M 55534243123456780000000000000011062000000100000000000000000000
+  sudo wvdial simpati
+}
+
 #  Customize BASH PS1 prompt to show current GIT repository and branch.
 #  by Mike Stewart - http://MediaDoneRight.com
 
@@ -165,7 +171,7 @@ Login="\u@\h >>"
 # This PS1 snippet was adopted from code for MAC/BSD I saw from: http://allancraig.net/index.php?option=com_content&view=article&id=108:ps1-export-command-for-git&catid=45:general&Itemid=96
 # I tweaked it to work on UBUNTU 11.04 & 11.10 plus made it mo' better
 
-export PS1=$IGreen$Login$Color_Off'$(git branch &>/dev/null;\
+export PS1=$BIGreen$Login$Color_Off'$(git branch &>/dev/null;\
   if [ $? -eq 0 ]; then \
     echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
     if [ "$?" -eq "0" ]; then \
