@@ -19,6 +19,7 @@ Plugin 'matchit.zip', {'name': 'matchit'} " go to closing brackets
 Plugin 'rking/ag.vim' " ag for faster search
 Plugin 'KabbAmine/zeavim.vim' " integrate with zeal
 Plugin 'wakatime/vim-wakatime' " integrate with wakatime
+Plugin 'dbext.vim' " integrate with DB
 
 " Appearances
 Plugin 'bling/vim-airline' " for statusline

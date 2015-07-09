@@ -75,7 +75,6 @@ function ssh-init {
 # function for usb_modeswitch
 function set-huawei {
   usb_modeswitch -v 0x12d1 -p 0x1446 -V 0x12d1 -P 0x1436 -M 55534243123456780000000000000011062000000100000000000000000000
-  sudo wvdial simpati
 }
 
 #  Customize BASH PS1 prompt to show current GIT repository and branch.
