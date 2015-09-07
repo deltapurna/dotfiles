@@ -29,10 +29,11 @@ Plugin 'junegunn/goyo.vim' " Distraction free
 Plugin 'junegunn/limelight.vim' " To accompany goyo
 
 " Language Specifics
-Plugin 'tpope/vim-rails' " Rails
-Plugin 'derekwyatt/vim-scala' " Scala
 Plugin 'vim-ruby/vim-ruby' " Ruby
-Plugin 'kchmck/vim-coffee-script' " CoffeeScript
+Plugin 'tpope/vim-rails' " Rails
+Plugin 'tpope/vim-bundler' " Bundler Gem
+Plugin 'tpope/vim-rbenv' " rbenv
+Plugin 'derekwyatt/vim-scala' " Scala
 Plugin 'tpope/vim-haml' " Haml
 Plugin 'evanmiller/nginx-vim-syntax' " Nginx
 Plugin 'briancollins/vim-jst' " for ejs

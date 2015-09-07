@@ -27,8 +27,9 @@ alias glib='cd ~/code/lib'
 # dotfiles
 alias gdot='cd ~/dotfiles'
 
-# docs
+# admins
 alias gdocs='cd ~/Docs'
+alias gqw='~/Dropbox/eskelapaparut/qiscus' # qiscus work
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
