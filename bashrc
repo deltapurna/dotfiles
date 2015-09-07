@@ -29,7 +29,7 @@ alias gdot='cd ~/dotfiles'
 
 # admins
 alias gdocs='cd ~/Docs'
-alias gqw='~/Dropbox/eskelapaparut/qiscus' # qiscus work
+alias gqw='cd ~/Dropbox/eskelapaparut/qiscus' # qiscus work
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
