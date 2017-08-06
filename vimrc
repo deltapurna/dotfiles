@@ -34,6 +34,8 @@ Plugin 'tpope/vim-rails' " Rails
 Plugin 'tpope/vim-bundler' " Bundler Gem
 Plugin 'tpope/vim-rbenv' " rbenv
 Plugin 'derekwyatt/vim-scala' " Scala
+Plugin 'gre/play2vim' " Play framework
+Plugin 'fatih/vim-go' " for go
 Plugin 'tpope/vim-haml' " Haml
 Plugin 'evanmiller/nginx-vim-syntax' " Nginx
 Plugin 'briancollins/vim-jst' " for ejs
@@ -46,6 +48,7 @@ filetype plugin indent on	" load filetype plugins + indentation
 syntax enable
 set encoding=utf-8
 set showcmd			" display incomplete commands
+set clipboard=unnamed " for sharing with OSX clipboard
 
 " Whitespaces
 set nowrap 			" don't wrap lines
@@ -89,13 +92,13 @@ autocmd User GoyoLeave Limelight!
 if has('autocmd')
   autocmd bufwritepost .vimrc source $MYVIMRC " source .vimrc file after saving it
   " Open markdown files with Chrome.
-  autocmd BufEnter *.md exe 'nnoremap <leader>p :!chromium %:p<CR>'
+  autocmd BufEnter *.md exe 'nnoremap <leader>p :!open -a "Google Chrome" %:p<CR>'
 endif
 
 " gvim setup
 if has('gui_running')
   colorscheme  base16-eighties
-  set guifont=Source\ Code\ Pro\ 11 " set default font to Source Code Pro 11
+  set guifont=Source\ Code\ Pro:h12 " set default font to Source Code Pro 11
   set guioptions-=T  " remove toolbar
   set guioptions-=r  " remove right-hand scroll bar
   set guioptions-=L  " remove left-hand scroll bar

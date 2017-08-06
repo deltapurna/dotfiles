@@ -1,7 +1,7 @@
 # ~/.tmuxinator/qiscus.yml
 
 name: qiscus
-root: ~/Code/Dev/Web/Qiscus
+root: ~/Code/Dev/Web/qiscus-web
 
 # Optional tmux socket
 # socket_name: foo
